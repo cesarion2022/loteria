@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria Pijao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loteria Pijao</h1>
+        <h2>Valor del Cupo: $50,000</h2>
+        <h3>Juega todos los lunes con la última cifra de la Lotería del Tolima</h3>
+        <div id="date-time"></div>
+        
+        <div class="number-selection">
+            <h3>Seleccione sus números</h3>
+            <div id="numbers" class="numbers"></div>
+            <button id="reset-btn">Reset</button>
+        </div>
+
+        <form id="lottery-form">
+            <h2>Registro de Usuario</h2>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+            
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" required>
+            
+            <label for="nequi">Número de Nequi:</label>
+            <input type="tel" id="nequi" required>
+            
+            <label for="selected-numbers">Números Seleccionados:</label>
+            <input type="text" id="selected-numbers" readonly required>
+            
+            <label for="calendar">Fecha de Juego:</label>
+            <input type="date" id="calendar" required>
+            
+            <button type="submit">Registrar</button>
+        </form>
+        
+        <a href="https://wa.link/ureayk" target="_blank" class="whatsapp-link">Pagar vía WhatsApp</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
